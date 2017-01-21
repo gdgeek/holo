@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
-using UnityEngine.VR.WSA.Input;
 
+#if UNITY_STANDALONE_WIN
+using UnityEngine.VR.WSA.Input;
+#endif
 public class GazeGestureManager : MonoBehaviour
 {
     public static GazeGestureManager Instance { get; private set; }

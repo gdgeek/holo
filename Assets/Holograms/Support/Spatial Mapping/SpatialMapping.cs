@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
-using UnityEngine.VR.WSA;
 
+#if UNITY_STANDALONE_WIN
+using UnityEngine.VR.WSA;
+#endif
 public class SpatialMapping : MonoBehaviour {
 
     public static SpatialMapping Instance { private set; get; }
